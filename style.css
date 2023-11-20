@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 22px 12%;
+  justify-content: space-between;
+  align-items: center;
+  background: #051b3b;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 8px;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navlist {
+  display: flex;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.45s ease;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.navlist li {
+  margin: 0 35px;
+}
+
+.navlist a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navlist a:hover {
+  color: #05b4ff;
+}
+
+.button {
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 18px;
+  background-color: #0788ff;
+  border: 2px solid #0788ff;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.container {
+  /* margin-top: 12rem; */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+}
+.line {
+  background-color: red;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition: width 1s ease-in-out;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  cursor: pointer;
+  border: 3px solid #051b3b;
+}
+.bt-0 {
+  border-top: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.game-info {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+.info {
+  color: #0788ff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+  text-align: center;
+}
+.btn {
+  margin: 20px 140px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0a254c;
+}
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+  margin-left: 6rem;
+}
